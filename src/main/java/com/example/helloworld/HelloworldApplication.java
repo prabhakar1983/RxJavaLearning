@@ -4,11 +4,7 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
-import javax.ws.rs.client.Client;
-
-import org.glassfish.jersey.client.JerseyClientBuilder;
-
-import com.example.helloworld.resources.HelloworldResource;
+import com.example.helloworld.resources.FamilyTreeResource;
 
 
 public class HelloworldApplication extends Application<HelloworldConfiguration> {
@@ -29,11 +25,7 @@ public class HelloworldApplication extends Application<HelloworldConfiguration> 
 
     @Override
     public void run(HelloworldConfiguration configuration, Environment environment) {
-    	final Client httpClient = new JerseyClientBuilder().build();
-    	
-    	final HelloworldResource resource = new HelloworldResource(configuration.getUserName(), configuration.getPassword(), httpClient);
-    	
-    	environment.jersey().register(resource);
+    	environment.jersey().register(new FamilyTreeResource());
     }
 
 }

@@ -1,3 +1,3 @@
-/home/thatchinamoorthyp/workspace/dropwizard-microservice/src/main/java/com/example/helloworld/HelloworldApplication.java
-/home/thatchinamoorthyp/workspace/dropwizard-microservice/src/main/java/com/example/helloworld/HelloworldConfiguration.java
-/home/thatchinamoorthyp/workspace/dropwizard-microservice/src/main/java/com/example/helloworld/resources/HelloworldResource.java
+/home/thatchinamoorthyp/workspace/Microservices/src/main/java/com/example/helloworld/HelloworldConfiguration.java
+/home/thatchinamoorthyp/workspace/Microservices/src/main/java/com/example/helloworld/HelloworldApplication.java
+/home/thatchinamoorthyp/workspace/Microservices/src/main/java/com/example/helloworld/resources/FamilyTreeResource.java
