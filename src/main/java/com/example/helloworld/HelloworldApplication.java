@@ -4,13 +4,14 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
-import com.example.helloworld.resources.FamilyTreeResource;
+import com.example.helloworld.resources.TestResource;
 
 
 public class HelloworldApplication extends Application<HelloworldConfiguration> {
 	
     public static void main(String[] args) throws Exception {
-        new HelloworldApplication().run(args);
+        HelloworldApplication helloworldApplication = new HelloworldApplication();
+        helloworldApplication.run(args);
     }
 
     @Override
@@ -25,7 +26,8 @@ public class HelloworldApplication extends Application<HelloworldConfiguration> 
 
     @Override
     public void run(HelloworldConfiguration configuration, Environment environment) {
-    	environment.jersey().register(new FamilyTreeResource());
+    	//environment.jersey().register(new FamilyTreeResource());
+    	environment.jersey().register(new TestResource());
     }
 
 }

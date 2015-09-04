@@ -90,10 +90,6 @@ public class ObservablesTest {
 					.map(getFamilyTreeFunction)
 					.subscribeOn(Schedulers.io())
 					.subscribe(action, errorHandlingFunc, onCompleteFunc);
-					//.subscribe(response -> System.out.println("response: " + response));
-		// TODO:
-		// To only way to prove Event handling is - Read messages from Queue and append data and push it back.
-		
 	}
 	
 	
